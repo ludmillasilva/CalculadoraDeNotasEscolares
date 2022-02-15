@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CAEADA9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA DE NOTAS ESCOLARES"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:text=""
+        android:hint="Nota 1"
+        android:background="@color/pink2"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/edtNota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota 2"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:background="@color/pink2"
+        android:padding="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"/>
+
+    <EditText
+        android:id="@+id/edtNota3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/pink2"
+        android:gravity="center"
+        android:hint="Nota 3"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNota1" />
+
+    <EditText
+        android:id="@+id/edtNota4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota 4"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:background="@color/pink2"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edtNota2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <EditText
+        android:id="@+id/edtNumeroDeFaltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@color/pink2"
+        android:gravity="center"
+        android:hint="Numero de faltas"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNota3" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:padding="20dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
